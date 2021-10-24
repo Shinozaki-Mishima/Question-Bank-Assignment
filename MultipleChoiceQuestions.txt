@@ -1,0 +1,104 @@
+Suppose cursor refers to a node in a linked list (using the IntNode class with instance variables called data and link). What statement changes cursor so that it refers to the next node?
+A. cursor++;
+B. cursor = link;
+C. cursor += link;
+D. cursor = cursor.link;
+A
+
+Suppose cursor refers to a node in a linked list (using the Node class with instance variables called data and link). What boolean expression will be true when cursor refers to the tail node of the list?
+A. (cursor == null)
+B. (cursor.link == null)
+C. (cursor.data == null)
+D. (cursor.data == 0.0)
+B
+
+Which boolean expression indicates whether the numbers stored in two nodes (p and q) are the same. Assume that neither p nor q is null.
+A. p == q
+B. p.data == q.data
+C. p.link == q.link
+D. None of the above.
+C
+
+Suppose that p is a reference variable that contains the null reference. What happens at runtime if the program tries to activate a method of p?
+A. IllegalArgumentException
+B. IllegalStateException
+C. NullPointerException
+D. The results are unpredictable.
+D
+
+Suppose that a method has one node as a parameter and it returns two references to nodes. What's the best header for the method?
+A. IntNode foo(IntNode p)
+B. IntNode, IntNode foo(IntNode p)
+C. IntNode[ ] foo(IntNode p)
+D. void foo(IntNode p, IntNode answer1, IntNode answer2)
+C
+
+In the linked list version of the Bag class an instance variable manyNodes is used to keep track of how long the linked list is. Why not just make a call to the IntNode method listLength()?
+A. The listLength() method is O(n) and the alternative is O(1).
+B. The listLength() method is private.
+C. The listLength() method results in an infinite loop for circular lists.
+D. The listLength() method works only for lists of integers.
+B
+
+For the linked-list version of the Sequence ADT, which operations are constant time operations in the worst case?
+A. addAfter is constant time, but not addBefore
+B. addBefore is constant time, but not addAfter
+C. Both addAfter and addBefore are constant time
+D. Neither addAfter nor addBefore are constant time
+D
+
+What kind of list is best to answer questions such as "What is the item at position n?"
+A. Lists implemented with an array.
+B. Doubly-linked lists.
+C. Singly-linked lists.
+D. Doubly-linked or singly-linked lists are equally best
+C
+
+Which of the following stack operations could result in stack underflow?
+A. is_empty
+B. pop
+C. push
+D. Two or more of the above answers
+C
+
+Which of the following applications may use a stack?
+A. A parentheses balancing program.
+B. Keeping track of local variables at run time.
+C. Syntax analyzer for a compiler.
+D. All of the above.
+C
+
+Suppose we have an array implementation of the stack class, with ten items in the stack stored at data[0] through data[9]. The CAPACITY is 42. Where does the push method place the new entry in the array?
+A. data[0]
+B. data[1]
+C. data[9]
+D. data[10]
+C
+
+In the array version of the Stack class, which operations require linear time for their worst-case behavior?
+A. is_empty
+B. peek
+C. pop
+D. push when the stack is below capacity
+C
+
+In the linked-list version of the Stack class, which operations require linear time for their worst-case behavior?
+A. is_empty
+B. peek
+C. pop
+D. push
+C
+
+In the linked list implementation of the queue class, where does the insert method place the new entry on the linked list?
+A. At the head
+B. At the tail
+C. After all other entries that are greater than the new entry.
+D. After all other entries that are smaller than the new entry.
+C
+
+In the linked-list version of the Queue class rather than the Stack class, which operations require linear time for their worst-case behavior?
+A. getFront
+B. insert
+C. isEmpty
+D. None of these operations require linear time.
+D
